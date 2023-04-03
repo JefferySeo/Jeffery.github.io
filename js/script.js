@@ -15,7 +15,7 @@ $(function(){
     $('#hamb').click(function(){
         $('#ham-gnb').fadeToggle(300);
     })
-    $('#ham-gnb>li>a').click(function(){
+    $('#ham-gnb>li').click(function(){
         $('#ham-gnb').fadeToggle(300);
     })
 

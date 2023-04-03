@@ -154,6 +154,7 @@ header nav{
 .ham-gnb li{
     margin: 20px 0;
     font-size:20px;
+    cursor: pointer;
 }
 .ham-gnb li a{
     position:relative;
@@ -170,12 +171,12 @@ header nav{
     transition: 0.3s;
     transform-origin: left;
 }
-.ham-gnb li a:hover{
+.ham-gnb li:hover a{
     text-decoration: none;
     font-weight:600;
     color:#000
 }
-.ham-gnb li a:hover::after{
+.ham-gnb li:hover a::after{
     transform:scaleX(1);
 }
 /**** intro ****/
