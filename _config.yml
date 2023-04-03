@@ -1,11 +1,11 @@
 # Site
 locale: 'ko-KR'
-name: "Bk4533"
-title: "Bk4533 Blog"
-description: "Bk4533 Blog's."
+name: "Jeffery"
+title: "Jeffery Blog"
+description: "Jeffery Blog's."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-url: 'http://bk4533.github.io'
+url: 'http://JefferySeo.github.io'
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
