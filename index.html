@@ -1,61 +1,125 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffery's Story</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="bin"></div>
+        <nav>
+            <ul class="gnb">
+                <li><a href="javascript:void(0)" class="trans" onclick="transPage(0)">Intro</a></li>
+                <li><a href="javascript:void(0)" class="trans" onclick="transPage(1)">Jeffery</a></li>
+                <li><a href="javascript:void(0)" class="trans" onclick="transPage(2)">Portfolio</a></li>
+                <li><a href="javascript:void(0)" class="trans" onclick="transPage(3)">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamb" class="hamb" onclick="hambOn()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <section class="intro" id="intro">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="intro-text">
+                    <h1>Jeffery's</h1>
+                    <h1>Story</h1>
+                    <p>Full Stack Programmer</p>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="intro-img">
+                    <img src="images/intro.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Jeffery" id="Jeffery">
+        <div class="container">
+            <div class="tag-name">
+                <h1>about me<span>about me</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+                    <div class="my-img">
+                        <img src="images/my.jpg" alt="me">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 pt-5">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="mb-4"><i class="fa-solid fa-angle-right mr-2 text-orange"></i><strong class="mr-1">Name : </strong>서택상</p>
+                            <p class="mb-4"><i class="fa-solid fa-angle-right mr-2 text-orange"></i><strong class="mr-1">eng-Name : </strong>Jeffery Seo</p>
+                            <p class="mb-4"><i class="fa-solid fa-angle-right mr-2 text-orange"></i><strong class="mr-1">City : </strong>경기 김포시</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p class="mb-4"><i class="fa-solid fa-angle-right mr-2 text-orange"></i><strong class="mr-1">Birth : </strong>1994.07.25</p>
+                            <p class="mb-4"><i class="fa-solid fa-angle-right mr-2 text-orange"></i><strong class="mr-1">Email : </strong>emerial94@naver.com</p>
+                        </div>
+                        <div class="col-lg-12 pt-3">
+                            <div class="mytext">
+                                <h1><i class="fa-regular fa-clock mr-3 text-theme align-text-middle"></i>Experience</h1>
+                                <p class="mt-3 ml-5 font-weight-bold">(주) 빅터시스템 경호사업부 팀장<span class="font-weight-lighter ml-2">2016.07~2023.01</span></p>
+                                <p class="mt-3 ml-5 font-weight-bold">가톨릭대학교 2018 중앙 새내기 배움터 기획단 안전보안국장<span class="font-weight-lighter ml-2">2017.12~2018.03</span></p>
+                                <p class="mt-3 ml-5 font-weight-bold">가톨릭대학교 중앙 야구동아리 텀블러즈 회장<span class="font-weight-lighter ml-2">2016.07~2018.02</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 pt-3 mt-3">
+                            <div class="mytext">
+                                <h1><i class="fa-solid fa-book-open mr-3 text-theme align-text-middle"></i>Education</h1>
+                                <p class="font-weight-bold mt-3 ml-5">이젠아카데미컴퓨터학원 [스마트웹&콘텐츠개발]풀스택 자바웹개발자_A 수료 <span class="font-weight-lighter ml-2">2023-01 ~ 2023-07</span></p>
+                                <p class="font-weight-bold mt-3 ml-5">가톨릭대학교 정보통신전자공학부 졸업 <span class="font-weight-lighter ml-2">2013-03 ~ 2019-02</span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="myskill pt-3">
+                                <h1><i class="fa-solid fa-fire text-theme my-3 mr-3"></i>Skills</h1>
+                                <h2 class="my-2">Front-End</h2>
+                                <p class="my-2">HTML / CSS <i>90%</i></p>
+                                <div id="skill1" class="skills" data-width="90" data-background="#f3ceb0"></div>
+                                <p class="my-2">javaScript <i>90%</i></p>
+                                <div id="skill2" class="skills" data-width="90" data-background="#f3ceb0"></div>
+                                <p class="my-2">React <i>70%</i></p>
+                                <div id="skill3" class="skills" data-width="70" data-background="#f3ceb0"></div>
+                                <div class="gugan mt-4"></div>
+                                <h2 class="my-2 mt-4">Back-End</h2>
+                                <p class="my-2">java <i>80%</i></p>
+                                <div id="skill4" class="skills" data-width="80" data-background="#cfaa8b"></div>
+                                <p class="my-2">database <i>80%</i></p>
+                                <div id="skill5" class="skills" data-width="80" data-background="#cfaa8b"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
-{% if page.url == "/" %}
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
+
+
+
+    <div class="samc">
+
     </div>
-    <div class="row">
 
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
-</section>
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
+    <!-- scrollUp -->
+    <div id="scrollUp" onclick="scrollUp()">
+        <i class="fa-solid fa-up-long"></i>
     </div>
 
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/skill.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

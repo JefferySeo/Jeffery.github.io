@@ -1,0 +1,279 @@
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('reset.css');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{box-sizing: border-box;}
+
+html,body{
+    height:100%;
+    margin:0;
+    padding:0;
+    
+}
+a{
+    color:#000;
+}
+body{
+    font-family: 'Pretendard-Regular', sans-serif;
+    color:#777;
+    font-size:16px;
+    overflow-x:hidden;
+}
+.container{
+    max-width:1320px;
+}
+strong{
+    font-weight:900;
+}
+.text-theme{
+    color:#D5C9BF;
+}
+.text-orange{
+    color: #ff6600;
+}
+/**** header ****/
+header{
+    width:100%;
+    position:fixed;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    transition:0.5s;
+    align-items: center;
+}
+header.header-act{
+    height:50px;
+    background-color: rgba(213,201,191,0.3);
+}
+
+header nav{
+    max-width:40%;
+    flex:0 0 40%;
+    margin-right:50px;
+}
+.gnb{
+    display: flex;
+}
+.gnb li{
+    width:25%;
+    margin-right:30px;
+}
+.gnb li a{
+    display:inline-block;
+    font-size:20px;
+    position: relative;
+}
+.gnb li a::after{
+    content:"";
+    width:100%;
+    height:2px;
+    background-color: #000;
+    position:absolute;
+    bottom:-4px;
+    left:0;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+.gnb li a:hover{
+    text-decoration: none;
+    font-weight:600;
+
+}
+.gnb li a:hover::after{
+    transform:scaleX(1);
+}
+.gnb li a.active{
+    text-decoration: none;
+    font-weight:600;
+}
+.gnb li a.active::after{
+    transform:scaleX(1);
+}
+header:hover .hamb{
+    border-color:#fff;
+}
+.hamb{
+    position:relative;
+    width:35px;
+    height:35px;
+    border:2px solid #000;
+    border-radius: 5px;
+    display:none;
+    margin:10px;
+}
+header:hover .hamb span{
+    background-color: #fff;;
+}
+.hamb span{
+    position: absolute;
+    width:20px;
+    height:2px;
+    background-color: #000;
+    transition: 0.3s;
+}
+.hamb span:first-child{
+    top:6px;
+    left:5px;
+}
+.hamb span:nth-child(2){
+    top:14px;
+    left:5px;
+}
+.hamb span:last-child{
+    top:22px;
+    left:5px;
+}
+.act span:first-child{
+    width:5px;
+    top:14px;
+}
+.act span:nth-child(2){
+    width:5px;    
+    left:13px;
+}
+.act span:last-child{
+    width:5px;
+    top:14px;
+    left:22px;
+}
+/**** intro ****/
+.intro{
+    background-color: #D5C9BF;
+    padding-top:50px;
+    padding-bottom:100px;
+}
+.intro-text{
+    margin-top:150px;
+    margin-bottom:100px;
+    margin-left:50px;
+}
+.intro-text h1{
+
+    font-size:70px;
+    color:#fff;
+    margin:20px 0;
+}
+.intro-text p{
+
+    font-size:30px;
+    margin-top:40px;
+    color:#fff7f7;
+}
+.intro-img{
+    width:100%;
+    margin:100px 0;
+}
+.intro-img img{
+    width:100%;
+}
+
+/**** Jeffery ****/
+.Jeffery{
+    padding-top:70px;
+}
+.tag-name{
+    text-align: center;
+}
+
+.tag-name h1{
+    color:#D5C9BF;
+    font-size:35px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+}
+.tag-name h1 span{
+    position:absolute;
+    top:-20px;
+    left:50%;
+    transform: translate(-50%);
+    font-size:45px;
+    z-index:-99;
+    color:#ededed;
+    letter-spacing: -2px;
+}
+
+.my-img{
+    width:100%;
+    text-align: center;
+}
+.my-img img{
+    width:80%;
+    border-radius: 10px;
+    margin-top:100px;
+}
+.mytext h1{
+    font-size:40px;
+}
+.mytext{
+    font-size:14px;
+}
+.myskill h1{
+    font-size:40px;
+}
+.myskill h2{
+    font-size:30px;
+}
+.myskill p{
+    font-size:14px;
+    font-weight: 600;
+}
+.myskill p>i{
+    float:right;
+}
+.gugan{
+    width:100%;
+    height:2px;
+    background: linear-gradient(to right, #fff, #ededed, #bdbbbb, #ededed, #fff);
+}
+
+/**** scrollUp ****/
+#scrollUp{
+    position:fixed;
+    bottom:50px;
+    right:50px;
+    background-color: #D5C9BF;
+    width:50px;
+    height:50px;
+    padding:15px 0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+#scrollUp>i{
+    font-size:20px;
+    color:#929292;
+}
+
+.samc{
+    height:3000px;
+}
+@media (max-width:992px){
+    
+    .intro-img{
+        margin-top:150px;
+    }
+}
+@media (max-width:768px){
+    .intro-img{
+        display:none;
+    }
+}
+
+@media (max-width:576px){
+    header nav{
+        display:none;
+    }
+    .hamb{
+        display:block;
+    }
+    
+}
