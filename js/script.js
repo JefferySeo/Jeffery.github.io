@@ -19,7 +19,15 @@ $(function(){
         $('#ham-gnb').fadeToggle(300);
     })
 
+    $('#kakao-icon').click(function(){
+        $('.kakaoQR').fadeToggle(300);
+    })
+    $('.kakaoQR').click(function(){
+        $(this).fadeToggle(300);
+    })
+
     $('.skills').myskillbar({});
+
 
 });// jQ
 

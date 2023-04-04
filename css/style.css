@@ -23,7 +23,7 @@ body{
     font-family: 'Pretendard-Regular', sans-serif;
     color:#777;
     font-size:16px;
-    overflow-x:hidden;
+    /* overflow-x:hidden; */
 }
 .container{
     width:1320px;
@@ -279,6 +279,91 @@ header nav{
     margin-bottom:70px;
 }
 
+
+
+
+/**** contact ****/
+.contact{
+    margin-top:70px;
+}
+.contact-container{
+    width:900px;
+    max-width: 100%;
+    margin:0 auto;
+}
+.contact .row{
+    margin-top:60px;
+}
+.contact .row h1{
+    font-size:30px;
+    margin:10px 0;
+}
+.contact .row p{
+    margin: 5px 0;
+    font-size:12px;
+}
+.email-area{
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px rgba(213,201,191,0.5);
+    padding:15px 0;
+    margin-left: 20px;
+}
+.mail-box{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    background-color: #D5C9BF;
+    border-radius: 50%;
+    padding:15px;
+}
+.mail-box i{
+    font-size:20px;
+    color:#fff
+}
+.sns-area{
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px rgba(213,201,191,0.5);
+    padding:15px 0;
+    margin-right: 20px;
+
+}
+.sns-area img{
+    cursor: pointer;
+    width:50px;
+    height:50px;
+    border-radius: 15px;
+}
+.sns-area img:first-child{
+    margin-right: 15px;
+}
+.kakaoQR{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 5;
+    display: none;
+}
+.kakaoQR img{
+    width:200px;
+    height:100%;
+}
+
+/**** footer ****/
+footer{
+    background-color: #D5C9BF;
+    margin-top:70px;
+    padding:50px 0;
+    text-align: center;
+}
+footer h1{
+    font-size: 50px;
+}
+.copy{
+    margin: 30px 0;
+}
+
+
 /**** scrollUp ****/
 #scrollUp{
     position:fixed;
@@ -298,9 +383,7 @@ header nav{
     color:#929292;
 }
 
-.samc{
-    height:3000px;
-}
+
 @media (max-width:992px){
     .intro-img{
         margin-top:150px;
