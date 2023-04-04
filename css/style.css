@@ -308,7 +308,7 @@ header nav{
 }
 
 @media (max-width:768px){
-    .intro-img{
+    .intro-img img{
         display:none;
     }
 }
