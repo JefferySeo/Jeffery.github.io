@@ -278,8 +278,33 @@ header nav{
     padding-top:70px;
     margin-bottom:70px;
 }
-
-
+.portimg{
+    padding:20px;
+    width:100%;
+}
+.portimg img{
+    width:100%;
+}
+.port-text{
+    padding:40px 20px;
+}
+.port-text p{
+    margin-bottom:35px;
+    font-size:20px;
+}
+.port-text p span{
+    display: inline-block;
+    width:120px;
+    font-weight:700;
+}
+.port-text h1 a{
+    display: inline-block;
+    padding:10px 50px;
+    margin-right:40px;
+    background-color: #D5C9BF;
+    color:#fff;
+    border-radius: 15px;
+}
 
 
 /**** contact ****/
