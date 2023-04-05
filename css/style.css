@@ -185,6 +185,8 @@ header nav{
     background-color: #D5C9BF;
     padding-top:50px;
     padding-bottom:100px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .intro-text{
     margin-top:150px;
